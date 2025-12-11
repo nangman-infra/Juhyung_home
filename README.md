@@ -1,4 +1,3 @@
- HEAD
 # Juhyung_home
 
 # 주형의  홈페이지
