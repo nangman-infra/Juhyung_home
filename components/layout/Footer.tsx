@@ -4,11 +4,11 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground">
-            © 2024 동건. All rights reserved.
+            © 2022 김주형. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
-              href="https://github.com/whitejbb"
+              href="https://github.com/Juuuuuuuh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -16,7 +16,7 @@ export function Footer() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/%EB%8F%99%EA%B1%B4-%EC%9E%84-a574ab386/"
+              href= "#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -24,7 +24,7 @@ export function Footer() {
               LinkedIn
             </a>
             <a
-              href="mailto:gunni6112@gmail.com"
+              href="kimjuhyung0320@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               Email

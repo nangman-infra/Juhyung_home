@@ -7,11 +7,11 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: "홈" },
+    { href: "/", label: "메인" },
     { href: "/about", label: "소개" },
-    { href: "/projects", label: "프로젝트" },
+    { href: "/project", label: "프로젝트" },
     { href: "/blog", label: "블로그" },
-    { href: "/resume", label: "이력서" },
+    { href: "/portfolio", label: "포트폴리오" },
     { href: "/contact", label: "연락처" },
   ];
 
@@ -20,7 +20,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold">
-            동건
+            김주형
           </Link>
 
           {/* Desktop Navigation */}
