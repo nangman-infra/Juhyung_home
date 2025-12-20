@@ -33,17 +33,17 @@ juhyung-home/
 │   │   ├── contact/page.tsx        # 연락처 페이지
 │   │   ├── portfroile/page.tsx     # 이력서 페이지
 │   │   ├── projects/page.tsx       # 프로젝트 페이지
-│   │   ├── layout.tsx              # 전체 레이아웃 (헤더/푸터 조립)
+│   │   ├── layout.tsx              # 전체 레이아웃 
 │   │   └── page.tsx                # 메인 페이지
-│   ├── components/                 # 전역 공통 UI
+│   ├── components/       
 │   │   └── layout/                 # header.tsx, footer.tsx
-│   ├── constants/                  # 전역 데이터 관리
-│   │   └── ui.ts                   # 메뉴명, 사이트 정보
-│   └── domains/                    # 실제 페이지별 상세 내용 (수정 핵심)
-│       ├── about/components/       # about-content.tsx
-│       ├── blog/components/        # post-list.tsx
-│       ├── contact/components/     # contact-form.tsx
-│       ├── home/components/        # intro.tsx
-│       ├── portfroile/components/  # resume-detail.tsx
-│       └── projects/components/    # project-list.tsx
+│   ├── constants/               
+│   │   └── ui.ts                   # 사이트 정보
+│   └── domains/                    # 페이지별 상세 내용 
+│       ├── about/components/      
+│       ├── blog/components/       
+│       ├── contact/components/    
+│       ├── home/components/       
+│       ├── portfroile/components/  
+│       └── projects/components/    
 └── README.md
