@@ -39,7 +39,7 @@ juhyung-home/
 │   │   └── layout/                 # 헤더 및 푸터
 │   ├── constants/                  # 전역 데이터
 │   │   └── ui.ts                   # 메뉴 및 사이트 정보
-│   └── domains/                    # 도메인 내용
+│   └── domains/                    # 페이지 내용 입력
 │       ├── about/components/       # about-content.tsx
 │       ├── blog/components/        # post-list.tsx
 │       ├── contact/components/     # contact-form.tsx
