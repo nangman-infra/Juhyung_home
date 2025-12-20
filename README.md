@@ -20,7 +20,10 @@ pnpm install
 #서버 실행 (http://localhost:3000)
 pnpm dev
 ```
-##프로젝트 구조
+
+
+## 프로젝트 구조
+
 ```text
 juhyung-home/
 ├── src/
