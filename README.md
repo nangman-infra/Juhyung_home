@@ -8,38 +8,34 @@
 - **framework**: next.js 15.x (app router)
 - **language**: typescript
 - **styling**: tailwind css
-- **library**: shadcn/ui
+- **ui library**: shadcn/ui
 - **package manager**: pnpm
 
-# 패키지 다운로드
+## 시작하기
+
 ```bash
-## 의존성 설치
+#의존성 설치
 pnpm install
 
-# 개발 서버 실행 (http://localhost:3000)
+#서버 실행 (http://localhost:3000)
 pnpm dev
 
-
-
-
-
-## 프로젝트 실제 구조 (tree)
-```text
+##프로젝트 구조
 juhyung-home/
 ├── src/
-│   ├── app/                        # 라우팅
+│   ├── app/                        # 라우팅 및 페이지 배치
 │   │   ├── about/page.tsx          # 소개 페이지
 │   │   ├── blog/page.tsx           # 블로그 페이지
 │   │   ├── contact/page.tsx        # 연락처 페이지
 │   │   ├── portfroile/page.tsx     # 이력서 페이지
 │   │   ├── projects/page.tsx       # 프로젝트 페이지
-│   │   ├── layout.tsx              # 전체 레이아웃
-│   │   └── page.tsx                # 메인 페이지 
-│   ├── components/                 # 공통 UI
-│   │   └── layout/                 # 헤더 및 푸터
-│   ├── constants/                  # 전역 데이터
-│   │   └── ui.ts                   # 메뉴 및 사이트 정보
-│   └── domains/                    # 페이지 내용 입력
+│   │   ├── layout.tsx              # 전체 레이아웃 (헤더/푸터 조립)
+│   │   └── page.tsx                # 메인 페이지
+│   ├── components/                 # 전역 공통 UI
+│   │   └── layout/                 # header.tsx, footer.tsx
+│   ├── constants/                  # 전역 데이터 관리
+│   │   └── ui.ts                   # 메뉴명, 사이트 정보
+│   └── domains/                    # 실제 페이지별 상세 내용 (수정 핵심)
 │       ├── about/components/       # about-content.tsx
 │       ├── blog/components/        # post-list.tsx
 │       ├── contact/components/     # contact-form.tsx
@@ -47,4 +43,3 @@ juhyung-home/
 │       ├── portfroile/components/  # resume-detail.tsx
 │       └── projects/components/    # project-list.tsx
 └── README.md
-
