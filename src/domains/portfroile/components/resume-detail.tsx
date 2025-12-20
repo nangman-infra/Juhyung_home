@@ -1,33 +1,24 @@
-﻿export const ResumeDetail = () => {
+export default function ResumeDetail() {
   return (
-    <section className="py-20 px-4 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold lowercase mb-12">portfroile / resume</h2>
-      
-      <div className="space-y-12">
-        {/* experience section */}
-        <div>
-          <h3 className="text-xl font-semibold lowercase border-b pb-2 mb-4">experience</h3>
-          <div className="space-y-6">
-            <div>
-              <p className="font-medium">infrastructure engineer @ company name</p>
-              <p className="text-sm text-gray-500">2023 - present</p>
-              <ul className="list-disc pl-5 mt-2 text-gray-700 text-sm lowercase">
-                <li>cloud infrastructure management and optimization</li>
-                <li>security policy enforcement and monitoring</li>
-              </ul>
-            </div>
-          </div>
+    <div className="space-y-12">
+      {/*경력*/}
+      <section>
+        <h2 className="text-2xl font-bold border-b pb-2 mb-4">Experience</h2>
+        <div className="space-y-4">
+         
         </div>
+      </section>
 
-        {/* education section */}
-        <div>
-          <h3 className="text-xl font-semibold lowercase border-b pb-2 mb-4">education</h3>
+      {/* 학력 */}
+      <section>
+        <h2 className="text-2xl font-bold border-b pb-2 mb-4">Education</h2>
+        <div className="space-y-4">
           <div>
-            <p className="font-medium">university name</p>
-            <p className="text-sm text-gray-500 lowercase">bachelor of computer science (2018 - 2022)</p>
+            <h3 className="font-bold text-lg">한밭대학교 모바일융합공학과 학부 2학년 재학</h3>
+            <p className="text-sm text-muted-foreground">2022.03 - 2027.12 졸업 예정</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
-};
+}
