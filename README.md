@@ -21,6 +21,7 @@ pnpm install
 pnpm dev
 ```
 ##프로젝트 구조
+```text
 juhyung-home/
 ├── src/
 │   ├── app/                        # 라우팅 및 페이지 배치
