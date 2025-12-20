@@ -23,6 +23,8 @@ pnpm dev
 
 
 ## 프로젝트 구조
+### DDD(Domain-Driven Design)
+### 페이지 // 내용 분리
 
 ```text
 juhyung-home/
