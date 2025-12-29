@@ -15,3 +15,7 @@ export const NAV_ITEMS = [
   { name: "Portfroile", href: "/portfroile" }, 
   { name: "Contact", href: "/contact" },
 ];
+
+// 호환성을 위한 별칭 export
+export const site_info = SITE_CONFIG;
+export const nav_items = NAV_ITEMS;

@@ -1,4 +1,4 @@
-export default function Intro() {
+export function Intro() {
   return (
     <section className="py-20">
       <h1 className="text-4xl font-bold mb-4">안녕하세요 보안 꿈나무 김주형입니다.</h1>
@@ -14,3 +14,5 @@ export default function Intro() {
     </section>
   );
 }
+
+export default Intro;

@@ -1,4 +1,4 @@
-export default function ResumeDetail() {
+export function ResumeDetail() {
   return (
     <div className="space-y-12">
       {/*경력*/}
@@ -22,3 +22,5 @@ export default function ResumeDetail() {
     </div>
   );
 }
+
+export default ResumeDetail;

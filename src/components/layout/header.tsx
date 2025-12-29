@@ -23,7 +23,7 @@ export const Header = () => {
                   href={item.href}
                   className="hover:text-blue-600 transition-colors lowercase"
                 >
-                  {item.label}
+                  {item.name}
                 </Link>
               </li>
             ))}
@@ -59,7 +59,7 @@ export const Header = () => {
                   className="block py-2 hover:text-blue-600 transition-colors lowercase"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.label}
+                  {item.name}
                 </Link>
               </li>
             ))}
