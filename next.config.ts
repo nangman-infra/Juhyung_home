@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export", // 정적 사이트 export 활성화
+  images: {
+    unoptimized: true, // GitHub Pages는 이미지 최적화 미지원
+  },
+  devIndicators: false,
+  // GitHub Pages 배포 시 basePath 설정
+  basePath: "/Juhyung_home",
+  assetPrefix: "/Juhyung_home",
 };
 
 export default nextConfig;
