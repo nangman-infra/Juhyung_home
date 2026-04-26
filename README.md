@@ -21,7 +21,7 @@ pnpm dev
 ## 전체 구조 
 유지보수와 확장성을 고려하여 DDD(Domain-Driven Design) 패턴을 적용하고, 라우팅 로직과 세부 컴포넌트를 분리했습니다.
 
-Plaintext
+```
 juhyung-home/
 ├── src/
 │   ├── app/                    # [Routing] 페이지 배치 및 레이아웃
@@ -44,7 +44,7 @@ juhyung-home/
 │       ├── portfroile/components/
 │       └── projects/components/
 └── README.md
-
+```
 ### Security Identity
 본 포트폴리오는 단순한 웹사이트를 넘어, 아래의 인프라 관리 역량을 시각화하는 데 중점을 둡니다.
 
