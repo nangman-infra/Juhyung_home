@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+juhyung homepage
+포트폴리오용 개인 홈페이지 프로젝트 (infrastructure & security engineer)
 
-## Getting Started
+기술 스택
+frontend
+framework: next.js 15.x (app router)
+language: typescript
+styling: tailwind css
+ui library: shadcn/ui
+package manager: pnpm
+시작하기
+#의존성 설치
+pnpm install
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
+#서버 실행 (http://localhost:3000)
 pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+프로젝트 구조
+DDD(Domain-Driven Design)
+페이지 // 내용 분리
+juhyung-home/
+├── src/
+│   ├── app/                        # 라우팅 및 페이지 배치
+│   │   ├── about/page.tsx          # 소개 페이지
+│   │   ├── blog/page.tsx           # 블로그 페이지
+│   │   ├── contact/page.tsx        # 연락처 페이지
+│   │   ├── portfroile/page.tsx     # 이력서 페이지
+│   │   ├── projects/page.tsx       # 프로젝트 페이지
+│   │   ├── layout.tsx              # 전체 레이아웃 
+│   │   └── page.tsx                # 메인 페이지
+│   ├── components/       
+│   │   └── layout/                 # header.tsx, footer.tsx
+│   ├── constants/               
+│   │   └── ui.ts                   # 사이트 정보
+│   └── domains/                    # 페이지별 상세 내용 
+│       ├── about/components/      
+│       ├── blog/components/       
+│       ├── contact/components/    
+│       ├── home/components/       
+│       ├── portfroile/components/  
+│       └── projects/components/    
+└── README.md
