@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ShieldCheck, Server, Activity, Terminal } from "lucide-react";
+import { ShieldCheck, Server, Activity } from "lucide-react";
 import { SITE_CONFIG } from "../../constants/ui";
 
 export function Header() {

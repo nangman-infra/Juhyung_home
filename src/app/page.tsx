@@ -13,7 +13,7 @@ export default function Home() {
     {
       id: "hero",
       title: "SYSTEM ONLINE",
-      subtitle: `  보안 꿈나무, ${SITE_CONFIG.name}입니다`,
+      subtitle: `보안 꿈나무, ${SITE_CONFIG.name}입니다`,
       description: "인프라 구축부터 취약점 분석, 실시간 관제까지 전 과정을 아우르는 엔지니어를 지향합니다.",
     },
     {
@@ -27,14 +27,14 @@ export default function Home() {
       id: "projects",
       title: "Infrastructure",
       subtitle: "서버 자동화 및 관리",
-      description: "Ansible,Wazuh를 활용한 서버 관리 및 자동화 .",
+      description: "Ansible, Wazuh를 활용한 서버 관리 및 자동화.",
       link: "/projects",
     },
     {
       id: "security-blog",
       title: "Security Archive",
       subtitle: "보안 분석 및 기록",
-      description: "CVE 분석과 시스템 침해 사고 분석 기록 등 , 보안 엔지니어로서의 탐구 기록물들을 기록합니다.",
+      description: "CVE 분석과 시스템 침해 사고 분석 기록 등, 보안 엔지니어로서의 탐구 기록물들을 기록합니다.",
       link: "/blog",
     },
     {
@@ -46,7 +46,7 @@ export default function Home() {
     },
   ];
 
-  // 스크롤 제어 로직 (주형님 코드 최적화)
+  // 스크롤 제어 로직
   useEffect(() => {
     document.body.style.overflow = 'hidden';
 
@@ -77,7 +77,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.45, 0, 0.55, 1] }}
             className="w-full h-full"
         >
-          {sections.map((section, index) => (
+          {sections.map((section) => (
               <section key={section.id} className="w-full h-screen flex flex-col justify-center items-center px-6 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -116,15 +116,16 @@ export default function Home() {
           ))}
         </motion.div>
 
-        {/* 우측 인디케이터 (보안 전문가 느낌의 바 형태) */}
+        {/* 우측 인디케이터 (수정: index 대신 section.id 사용) */}
         <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4">
-          {sections.map((_, i) => (
+          {sections.map((section, index) => (
               <button
-                  key={i}
-                  onClick={() => setCurrentSection(i)}
+                  key={`nav-${section.id}`} // ✅ SonarQube 해결: 고유 ID 사용
+                  onClick={() => setCurrentSection(index)}
                   className={`transition-all duration-500 ${
-                      currentSection === i ? "w-1 h-12 bg-emerald-500" : "w-1 h-4 bg-gray-800 hover:bg-gray-600"
+                      currentSection === index ? "w-1 h-12 bg-emerald-500" : "w-1 h-4 bg-gray-800 hover:bg-gray-600"
                   }`}
+                  aria-label={`Go to ${section.title}`}
               />
           ))}
         </div>
