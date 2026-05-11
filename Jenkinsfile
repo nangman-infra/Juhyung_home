@@ -139,6 +139,7 @@ pipeline {
                             corepack --version
                             corepack enable
                             pnpm --version
+                            pnpm config set only-built-dependencies-soft-fail true
                             pnpm install --frozen-lockfile
                         '''
                     }
